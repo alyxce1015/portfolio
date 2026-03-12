@@ -1,0 +1,143 @@
+/* ─────────────────────────────────────────
+   Education.css
+───────────────────────────────────────── */
+
+.education {
+  padding: 5.5rem 5%;
+  background: var(--espresso);
+}
+
+.education__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* ── LEFT — school card ── */
+.education__left .section-label {
+  color: var(--caramel);
+}
+
+.education__left .section-title {
+  color: var(--foam);
+  margin-bottom: 2rem;
+}
+
+.education__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  background: rgba(255, 252, 247, 0.05);
+  border: 1px solid rgba(184, 135, 90, 0.25);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+}
+
+/* CSUF badge */
+.education__badge {
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--latte), var(--caramel));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education__badge span {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--espresso);
+  letter-spacing: 0.04em;
+}
+
+.education__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.education__school {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--foam);
+  line-height: 1.3;
+}
+
+.education__degree {
+  font-size: 0.85rem;
+  color: var(--latte);
+  line-height: 1.4;
+}
+
+.education__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.education__tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--caramel);
+  background: rgba(212, 164, 106, 0.12);
+  border: 1px solid rgba(212, 164, 106, 0.25);
+  padding: 0.25rem 0.7rem;
+  border-radius: 20px;
+}
+
+/* ── RIGHT — highlights ── */
+.education__group {
+  margin-bottom: 2rem;
+}
+
+.education__group-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--caramel);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(184, 135, 90, 0.2);
+}
+
+.education__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.education__list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.88rem;
+  color: rgba(242, 230, 208, 0.75);
+  line-height: 1.5;
+}
+
+.education__dot {
+  flex-shrink: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--latte);
+  opacity: 0.7;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 800px) {
+  .education__inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

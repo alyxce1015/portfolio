@@ -30,7 +30,7 @@
 }
 
 .hero__eyebrow {
-  font-size: 0.74rem;
+  font-size: 1.25rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--latte);
@@ -79,13 +79,6 @@
   margin-bottom: 1.8rem;
 }
 
-.hero__bio {
-  font-size: 0.95rem;
-  line-height: 1.85;
-  color: var(--roast);
-  max-width: 420px;
-  margin-bottom: 2.5rem;
-}
 
 .hero__btns {
   display: flex;

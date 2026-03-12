@@ -3,6 +3,37 @@
    ✏️  Edit this file to update your portfolio content.
 ───────────────────────────────────────── */
 
+// ── EDUCATION ────────────────────────────
+export const education = {
+  school:     'California State University, Fullerton',
+  short:      'CSUF',
+  degree:     'Bachelor of Science in Computer Science',
+  graduation: 'Expected May 2026',       // ✏️ update when you graduate
+  gpa:        '3.X / 4.0',              // ✏️ add your GPA or remove this line by setting to null
+  highlights: [
+    // Relevant coursework — shows employers you have the theory background
+    {
+      label: 'Relevant Coursework',
+      items: [
+        'Data Structures & Algorithms',
+        'Software Engineering',
+        'Database Management',
+        'Operating Systems',
+        'Computer Networks',
+        'Object-Oriented Programming',
+      ],
+    },
+    // Clubs / orgs — shows involvement beyond just classes
+    {
+      label: 'Involvement',
+      items: [
+        'Association for Computing Machinery (ACM)',  // ✏️ swap for clubs you're in
+        'Engineering & Computer Science Honors Society',
+      ],
+    },
+  ],
+};
+
 // ── SKILLS ───────────────────────────────
 // To add/remove a skill, edit these arrays.
 // Icons are pulled from https://skillicons.dev — free, no setup needed.
@@ -29,7 +60,7 @@ export const skills = {
     { name: 'Postman',             icon: 'https://skillicons.dev/icons?i=postman' },
     { name: 'REST APIs',           icon: 'https://skillicons.dev/icons?i=fastapi' },
     { name: 'JIRA',                icon: 'https://skillicons.dev/icons?i=jira' },
-    { name: 'Oracle SQL Dev',      icon: 'https://skillicons.dev/icons?i=mysql' },
+    { name: 'Oracle SQL Dev',      icon: 'https://skillicons.dev/icons?i=oracle' },
     { name: 'Power Automate',      icon: 'https://skillicons.dev/icons?i=azure' },
     { name: 'Quantum Control',     icon: 'https://skillicons.dev/icons?i=docker' },
   ],
@@ -39,23 +70,23 @@ export const skills = {
 export const initialExperience = [
   {
     id: 1,
-    date:    'June 2025 — Present',
-    role:    'Junior Developer and Data Analyst',
-    company: 'OMI Specialty Products · Fullerton, CA',
+    date:    '2023 — Present',
+    role:    'Software Engineer',
+    company: 'Company Name · Full-time',
     desc:    'Brief description of your role and what you accomplished. Keep it to 1–2 impactful sentences.',
   },
   {
     id: 2,
-    date:    'June 2025 — August 2025',
-    role:    'Software Engineer Intern',
-    company: 'Divine Software Systems LLC · Fremont, CA',
+    date:    '2021 — 2023',
+    role:    'Junior Developer',
+    company: 'Previous Company · Full-time',
     desc:    'Brief description of your role and what you accomplished. Keep it to 1–2 impactful sentences.',
   },
   {
     id: 3,
-    date:    'January 2023 — June 2023',
-    role:    'Configuration Analyst Intern',
-    company: 'Altierus Career College · Remote',
+    date:    '2020 — 2021',
+    role:    'Software Intern',
+    company: 'Internship Company · Internship',
     desc:    'Brief description of your role and what you accomplished. Keep it to 1–2 impactful sentences.',
   },
 ];
@@ -66,25 +97,25 @@ export const initialExperience = [
 export const projects = [
   {
     id:    1,
-    title: 'Nu Deck',
-    tag:   'Game Design · Unity, C#',
-    desc:  'Developed a Pokemon-style game in Unity using C#. Implemented core gameplay mechanics, including turn-based battles, map design, and styling.',
-    link:  'https://github.com/Kentalope22/Nu-Deck',
+    title: 'Project One',
+    tag:   'Web App · React',
+    desc:  'Short description of what you built and the tech you used.',
+    link:  '#',
     image: null,
   },
   {
     id:    2,
-    title: 'Portfolio',
-    tag:   'Web App · HTML, CSS, JavaScript, React.js',
-    desc:  'Built a personal portfolio to showcase experience, skills, projects, and information about me.',
+    title: 'Project Two',
+    tag:   'API · Node.js',
+    desc:  'Short description of what you built and the tech you used.',
     link:  '#',
     image: null,
   },
   {
     id:    3,
-    title: 'Mock UN Database Admin',
-    tag:   'Database Management · SQL',
-    desc:  'Structured a custom database using mock data.',
+    title: 'Project Three',
+    tag:   'Mobile · Swift',
+    desc:  'Short description of what you built and the tech you used.',
     link:  '#',
     image: null,
   },

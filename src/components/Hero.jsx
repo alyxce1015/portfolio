@@ -44,21 +44,15 @@ export default function Hero() {
 
         <h1 className="hero__name">
           <span className="first">Alyxander</span>
-          <span className="middle">Cui</span>
-          <span className="last">Edio</span>
+          <span className="last">Cui Edio</span>
         </h1>
 
-        <p className="hero__role">Building things that work beautifully.</p>
-
-        <p className="hero__bio">
-          I'm a software engineer who loves crafting clean, thoughtful solutions —
-          from backend architecture to polished interfaces. Let's build something
-          worth remembering.
-        </p>
+        <p className="hero__role">
+          Hi, I am currently a student at Cal State Fullerton, studying Computer Science and I love cars!</p>
 
         <div className="hero__btns">
-          <a href="#projects" className="btn btn-primary">See My Work</a>
-          <a href="#contact" className="btn btn-outline">Get In Touch</a>
+          <a href="#projects" className="btn btn-primary">Projects</a>
+          <a href="#contact" className="btn btn-outline">Contact Me!</a>
         </div>
       </div>
 
