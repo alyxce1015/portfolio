@@ -2,11 +2,7 @@ import React from 'react';
 import '../styles/Hero.css';
 import headshotPic from '../assets/headshotPic.jpg';
 
-// ─────────────────────────────────────────
-// TO CHANGE YOUR PHOTO:
-//   1. Place your new image in src/assets/
-//   2. Update the import line above to match the filename
-// ─────────────────────────────────────────
+
 const PHOTO = headshotPic;
 
 export default function Hero() {
@@ -30,8 +26,8 @@ export default function Hero() {
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
                 <circle cx="12" cy="7" r="4"/>
               </svg>
-              <p>Your Photo</p>
-              <span>Set PHOTO in Hero.jsx</span>
+              <p>N/A</p>
+              <span>No photo added</span>
             </div>
           )}
         </div>
