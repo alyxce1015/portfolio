@@ -1,0 +1,6 @@
+/* index.css — minimal entry reset; main styles live in src/styles/ */
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

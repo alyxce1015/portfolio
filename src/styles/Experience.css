@@ -1,0 +1,142 @@
+/* ─────────────────────────────────────────
+   Experience.css
+───────────────────────────────────────── */
+
+.experience {
+  padding: 5.5rem 5%;
+  background: var(--foam);
+  border-top: 1px solid rgba(184, 135, 90, 0.18);
+  border-bottom: 1px solid rgba(184, 135, 90, 0.18);
+}
+
+.experience__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ── TIMELINE ── */
+.timeline {
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 10px; bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--caramel), transparent);
+}
+
+/* ── TIMELINE ITEM ── */
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.8rem;
+  padding-left: 1.8rem;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -5px; top: 8px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--caramel);
+  border: 2px solid var(--foam);
+  box-shadow: 0 0 0 2px var(--caramel);
+}
+
+.timeline-item__date {
+  font-size: 0.73rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--latte);
+  margin-bottom: 0.3rem;
+}
+
+.timeline-item__role {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--espresso);
+  margin-bottom: 0.1rem;
+}
+
+.timeline-item__company {
+  font-size: 0.86rem;
+  color: var(--roast);
+  margin-bottom: 0.65rem;
+}
+
+.timeline-item__desc {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--roast);
+  max-width: 560px;
+}
+
+/* ── ITEM ACTIONS ── */
+.timeline-item__actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  align-items: center;
+}
+
+.edit-btn {
+  background: none;
+  border: 1px solid rgba(184, 135, 90, 0.35);
+  color: var(--latte);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.32rem 0.85rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.edit-btn:hover {
+  background: var(--cream);
+  color: var(--dark-roast);
+}
+
+.delete-btn {
+  background: none;
+  border: 1px solid rgba(184, 135, 90, 0.2);
+  color: rgba(184, 135, 90, 0.55);
+  font-size: 0.78rem;
+  padding: 0.32rem 0.65rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all var(--transition);
+  line-height: 1;
+}
+.delete-btn:hover {
+  background: #fde8e8;
+  color: #c0392b;
+  border-color: #c0392b;
+}
+
+/* ── ADD BUTTON ── */
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: none;
+  border: 1px dashed rgba(184, 135, 90, 0.4);
+  color: var(--latte);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: all var(--transition);
+}
+.add-btn:hover {
+  background: var(--cream);
+  border-color: var(--latte);
+  color: var(--dark-roast);
+}

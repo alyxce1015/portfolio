@@ -1,0 +1,109 @@
+/* ─────────────────────────────────────────
+   globals.css  —  Base styles & CSS variables
+───────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ── VARIABLES ── */
+:root {
+  --espresso:   #1E1008;
+  --dark-roast: #3B1F0D;
+  --roast:      #6B3A1F;
+  --latte:      #B8875A;
+  --caramel:    #D4A46A;
+  --cream:      #F2E6D0;
+  --foam:       #FAF4E8;
+  --milk:       #FFFCF7;
+
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  --radius:     3px;
+  --transition: 0.25s ease;
+}
+
+/* ── RESET ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--milk);
+  color: var(--dark-roast);
+  font-family: var(--font-body);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* ── SHARED UTILITIES ── */
+.section-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--latte);
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 400;
+  color: var(--espresso);
+  margin-bottom: 3.5rem;
+  line-height: 1.2;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--roast);
+}
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-block;
+  padding: 0.82rem 2.2rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: all var(--transition);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--dark-roast);
+  color: var(--cream);
+}
+.btn-primary:hover {
+  background: var(--espresso);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--caramel);
+  color: var(--roast);
+}
+.btn-outline:hover {
+  background: var(--cream);
+}
+
+/* ── SCROLL FADE ── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}

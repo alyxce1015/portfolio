@@ -1,0 +1,75 @@
+/* ─────────────────────────────────────────
+   Navbar.css
+───────────────────────────────────────── */
+
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background: rgba(255, 252, 247, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(184, 135, 90, 0.2);
+}
+
+.navbar__logo {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--dark-roast);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+}
+
+.navbar__links a {
+  font-size: 0.77rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--roast);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.navbar__links a:hover {
+  color: var(--espresso);
+}
+
+.navbar__resume-btn {
+  background: var(--dark-roast);
+  color: var(--cream);
+  border: none;
+  padding: 0.45rem 1.1rem;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 0.77rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+.navbar__resume-btn:hover {
+  background: var(--espresso);
+  transform: translateY(-1px);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 1rem 5%;
+  }
+  .navbar__links {
+    gap: 1.2rem;
+  }
+  .navbar__links a {
+    font-size: 0.7rem;
+  }
+}
