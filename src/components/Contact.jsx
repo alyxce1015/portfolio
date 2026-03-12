@@ -9,7 +9,7 @@ export function Contact() {
         Get in <em> touch </em>
       </h2>
       <p className="contact__sub">
-        send me an email and schedule a call, or a chat!
+        Send me an email and schedule a call, or a chat!
       </p>
       <a href="mailto:alyxce1015@gmail.com" className="contact__email">
         alyxce1015@gmail.com
