@@ -8,18 +8,21 @@ export const education = {
   school:     'California State University, Fullerton',
   short:      'CSUF',
   degree:     'Bachelor of Science in Computer Science',
-  graduation: 'Expected May 2026',       // ✏️ update when you graduate
-  gpa:        '3.X / 4.0',              // ✏️ add your GPA or remove this line by setting to null
+  graduation: 'Expected Graduation: May 2027',      
   highlights: [
     // Relevant coursework — shows employers you have the theory background
     {
       label: 'Relevant Coursework',
       items: [
-        'Data Structures & Algorithms',
+        'Data Structures',
+        'Algorithm Engineering',
         'Software Engineering',
-        'Database Management',
+        'File Structures and Databases',
+        'Compilers',
+        'Edge AI',
+        'AI Principles',
         'Operating Systems',
-        'Computer Networks',
+        'Modern Software Development',
         'Object-Oriented Programming',
       ],
     },
@@ -28,7 +31,7 @@ export const education = {
       label: 'Involvement',
       items: [
         'Association for Computing Machinery (ACM)',  // ✏️ swap for clubs you're in
-        'Engineering & Computer Science Honors Society',
+        'Theta Tau ΘT - Engineering Fraternity',
       ],
     },
   ],

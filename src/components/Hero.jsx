@@ -48,7 +48,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero__role">
-          Hi, I am currently a student at Cal State Fullerton, studying Computer Science and I love cars!</p>
+          Hi, I'm Alyx and I am addicted to coffee :D</p>
 
         <div className="hero__btns">
           <a href="#projects" className="btn btn-primary">Projects</a>

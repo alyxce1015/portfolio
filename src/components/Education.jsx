@@ -8,9 +8,9 @@ export default function Education() {
       <div className="education__inner">
 
         <div className="education__left fade-in">
-          <p className="section-label">Education</p>
+          
           <h2 className="section-title">
-            Where I <em>learned.</em>
+                Education
           </h2>
 
           <div className="education__card">
@@ -24,9 +24,6 @@ export default function Education() {
               <p className="education__degree">{education.degree}</p>
               <div className="education__tags">
                 <span className="education__tag">{education.graduation}</span>
-                {education.gpa && (
-                  <span className="education__tag">GPA {education.gpa}</span>
-                )}
               </div>
             </div>
           </div>
