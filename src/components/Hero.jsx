@@ -1,14 +1,13 @@
 import React from 'react';
 import '../styles/Hero.css';
+import headshotPic from '../assets/headshotPic.jpg';
 
 // ─────────────────────────────────────────
-// TO ADD YOUR PHOTO:
-//   1. Place your image in the /public/images/ folder
-//      e.g. /public/images/alyxander.jpg
-//   2. Replace `null` below with the path string:
-//      const PHOTO = '/images/alyxander.jpg';
+// TO CHANGE YOUR PHOTO:
+//   1. Place your new image in src/assets/
+//   2. Update the import line above to match the filename
 // ─────────────────────────────────────────
-const PHOTO = null;
+const PHOTO = headshotPic;
 
 export default function Hero() {
   return (
